@@ -1,0 +1,49 @@
+# Dairy Cooperative & Milk Quality Testing Dashboard
+
+## Project Overview
+
+This project is a relational database management application developed using Python, SQLite and Tkinter. It is designed to manage dairy collection centres, milk collections and milk quality testing records.
+
+## Features
+
+- Creation of three relational database tables.
+- Automatic sample data insertion.
+- Adding new collection centres and milk collection records.
+- Managing milk quality tests.
+- Deleting records with cascading delete functionality.
+- SQL JOIN operations to display combined information.
+- Individual views of all three database tables.
+- Input validation to prevent invalid entries.
+- Automatic refreshing of database views after insertions and deletions.
+
+## Technologies Used
+
+- Python
+- SQLite
+- Tkinter
+- SQL
+
+## Database Structure
+
+1. **Centres:** Stores collection centre names and contact emails.
+2. **Milk Collections:** Stores farmer names, collection dates and centre references.
+3. **Quality Tests:** Stores test types, measured values and collection references.
+
+## How to Run
+
+1. Install Python 3.
+2. Download or clone this repository.
+3. Open a terminal in the project folder.
+4. Execute:
+
+   `python dairy_cooperative_dashboard.py`
+
+5. The SQLite database is automatically created and sample records are inserted when the database is empty.
+
+## Database Integrity
+
+Foreign keys and ON DELETE CASCADE constraints are implemented to maintain relational consistency when collection centres or milk collections are deleted.
+
+## Project Objective
+
+To replace spreadsheet-based dairy collection tracking with a structured relational database application that supports efficient record management and milk quality monitoring.
